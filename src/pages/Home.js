@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Box } from '@mui/material';
 
@@ -7,12 +7,18 @@ import SearchExercises from '../components/SearchExercises';
 import Exercises from '../components/Exercises';
 
 const Home = () => {
+  const [bodyPart, setBodyPart] = useState([]);
+  const [exercises, setExercises] = useState([]);
+
   return (
     <Box>
       <HeroBanner />
-      <SearchExercises />
+      <SearchExercises
+        bodyPart={bodyPart}
+        setBodyPart={setBodyPart}
+        setExercises={setExercises}
+      />
       <Exercises />
-      <h2>hello</h2>
     </Box>
   );
 };
