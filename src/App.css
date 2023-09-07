@@ -1,5 +1,5 @@
 body {
-  font-family: "Josefin Sans";
+  font-family: 'Josefin Sans';
   background-color: #fffafb;
 }
 
@@ -137,4 +137,10 @@ body {
   .exercise-card {
     width: 280px;
   }
+}
+
+/*  */
+.react-horizontal-scrolling-menu--scroll-container {
+  overflow: hidden;
+  width: 100%;
 }
